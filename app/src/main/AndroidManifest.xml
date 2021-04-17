@@ -9,6 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:label="Capitolo 2"
+            android:name=".Android_and_ModelView_Controller_capitolo_2"></activity>
+        <activity
+            android:label="Capitolo 1"
+            android:name=".Two_button_GeoQuiz" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

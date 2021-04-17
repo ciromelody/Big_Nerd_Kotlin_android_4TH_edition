@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Big_Nerd_Kotlin_android_4TH_edition</string>
+    <string name="question_text">Canberra è la capitale dell\'Australia</string>
+    <string name="true_button">Vero</string>
+    <string name="false_button">Falso</string>
+    <string name="correct_toast">corretto!</string>
+    <string name="incorrect_toast">Incorrect!</string>
+    <string name="capitolo_2">Android and Model_View_Controller Capitolo 2</string>
 </resources>
