@@ -6,4 +6,21 @@
     <string name="correct_toast">corretto!</string>
     <string name="incorrect_toast">Incorrect!</string>
     <string name="capitolo_2">Android and Model_View_Controller Capitolo 2</string>
+    <string name="spiegazione">In questa activity del capitolo 2 Big Nerd,si parla di
+    MVC,che sta per Model View Controller .Il Model sono i dati del activity come ad esempio
+    il testo di una domanda,le View sono i componenti usati per visualizzare i dati come ad esempio
+    questa TextView in cui sto scrivento,e infine il Controller che può essere questa activity
+    che controlla dove deve essere posizionata questa TextView e i suoi dati all interno.
+    Questo modo di suddividere è molto importante perchè nei capitoli fututri se ne riparlerà
+    per tutelare i dati model da \n eventuali influenze del controller che potrebbe portare alla
+        cancellazione non voluta    dei dati
+
+    </string>
+    <string name="domanda_oceani">L\'oceano pacifico è più granda dell\'oceano atlantico</string>
+    <string name="next_button">NEXT</string>
+    <string name="domanda_mideast">Il cananle di Suez collega il mar rosso con L\'oceano indiano</string>
+    <string name="domanda_oceano_indiano">NEXT</string>
+    <string name="domanda_americhe">Il Rio delle amazzoni è più lungo di tutti i fiumi delle Americhe</string>
+    <string name="domanda_africa">le rive del Nilo sono in Egitto</string>
+    <string name="domand_asia">NEXT</string>
 </resources>
