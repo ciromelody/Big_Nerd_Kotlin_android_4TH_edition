@@ -44,5 +44,13 @@
         android:layout_marginBottom="16dp"
 
         />
+    <Button
+        android:id="@+id/button_capitolo_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/capitolo_3"
+        android:layout_marginBottom="16dp"
+
+        />
 </LinearLayout>
 </ScrollView>

@@ -11,9 +11,11 @@ class MainActivity : AppCompatActivity() {
     private lateinit var toastButton: Button
     private lateinit var quizButton: Button
     private lateinit var capitolo2Button: Button
+    private lateinit var capitolo3Button: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        capitolo3Button=findViewById(R.id.button_capitolo_3)
         capitolo2Button=findViewById(R.id.button_android_viewmodel)
         toastButton=findViewById(R.id.button_toast)
         quizButton=findViewById(R.id.button_two_button)
@@ -30,5 +32,9 @@ class MainActivity : AppCompatActivity() {
             b.putBoolean("isActive", true)
             intent.putExtras(b)
             startActivity(intent) }
+        capitolo3Button.setOnClickListener {
+            val intent = Intent(this@MainActivity,Android_and_ModelView_Controller_capitolo_2::class.java)
+            intent.putExtra("Username","Landscape")
+             startActivity(intent) }
     }
 }

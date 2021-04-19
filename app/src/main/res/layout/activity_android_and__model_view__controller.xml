@@ -61,12 +61,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:orientation="vertical" >
+            android:orientation="horizontal" >
+            <Button
+                android:layout_margin="16dp"
+                android:id="@+id/bn_vettore_sx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/arrow_left"
+
+                android:text="@string/precedente" />
             <Button
                 android:layout_margin="16dp"
                 android:id="@+id/bn_next"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="@string/next_button" />
+            <Button
+                android:layout_margin="16dp"
+                android:id="@+id/bn_vettore_dx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/arrow_right"
                 android:text="@string/next_button" />
         </LinearLayout>
 </LinearLayout>

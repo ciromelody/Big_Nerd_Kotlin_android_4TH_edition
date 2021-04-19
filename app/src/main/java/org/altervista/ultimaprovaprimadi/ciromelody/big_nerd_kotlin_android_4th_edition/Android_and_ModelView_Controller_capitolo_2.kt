@@ -1,8 +1,10 @@
 package org.altervista.ultimaprovaprimadi.ciromelody.big_nerd_kotlin_android_4th_edition
 
 import android.content.Context
+import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.util.Log
 import android.view.Gravity
 import android.view.View
@@ -13,9 +15,12 @@ import org.altervista.ultimaprovaprimadi.ciromelody.big_nerd_kotlin_android_4th_
 import org.altervista.ultimaprovaprimadi.ciromelody.big_nerd_kotlin_android_4th_edition.capitolo2.Utility
 
 class Android_and_ModelView_Controller_capitolo_2 : AppCompatActivity() {
+    private val TAG="KOT"
     private lateinit var trueButton: Button
     private lateinit var falseButton: Button
     private lateinit var  nextButton: Button
+    private lateinit var  sxButton: Button
+    private lateinit var  nextButton_vettore_dx: Button
     private lateinit var  testoDomanda: TextView
     private  val questionBank= listOf(
         Question(R.string.domanda_mideast,true),
@@ -29,8 +34,11 @@ class Android_and_ModelView_Controller_capitolo_2 : AppCompatActivity() {
     private var currentIndex=0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.d("KOT","fun onCreate()")
         setContentView(R.layout.activity_android_and__model_view__controller)
+        sxButton=findViewById(R.id.bn_vettore_sx)
         nextButton=findViewById(R.id.bn_next)
+         nextButton_vettore_dx = findViewById(R.id.bn_vettore_dx)
         trueButton=findViewById(R.id.bn_vero_cap2)
         falseButton=findViewById(R.id.bn_falso_cap2)
         testoDomanda=findViewById(R.id.tx_titolo_quiz_cap2)
@@ -43,11 +51,69 @@ class Android_and_ModelView_Controller_capitolo_2 : AppCompatActivity() {
                 checkAnswer(false)
 
         }
+        sxButton.setOnClickListener {view:View-> vai_a_domandaPrecedente()
+        }
         nextButton.setOnClickListener {view:View-> vai_a_prossimaDomanda()
+        }
+        nextButton_vettore_dx.setOnClickListener {view:View-> vai_a_prossimaDomanda()
         }
         val questionTextREsId=questionBank[currentIndex].textResId
             testoDomanda.setText(questionTextREsId)
+        val profileName=intent.getStringExtra("Username")
+        if(profileName=="Landscape"){
+            visualizza_il_dato_ricevuto(profileName)
+            ruota_il_dispositivo()}
       }
+
+
+    override fun onStart() {
+        super.onStart()
+        Log.d(TAG, "onStart() called")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d(TAG, "onResume() called")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d(TAG, "onPause() called")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d(TAG, "onStop() called")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(TAG, "onDestroy() called")
+    }
+
+    override fun onSaveInstanceState(outState: Bundle, outPersistentState: PersistableBundle) {
+        super.onSaveInstanceState(outState, outPersistentState)
+        Log.d("KOT","onSaveInstanceState called")
+
+    }
+
+    override fun isChangingConfigurations(): Boolean {
+        Log.d("KOT","Change configuration")
+        return super.isChangingConfigurations()
+    }
+
+    private fun ruota_il_dispositivo() {
+        ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
+    }
+
+    private fun vai_a_domandaPrecedente() {
+        if(currentIndex==0){currentIndex=1}
+        currentIndex=(currentIndex-1)%questionBank.size
+        Log.i("KOT","Indice corrente precedente:"+currentIndex.toString())
+        val questionTextREsId=questionBank[currentIndex].textResId
+        testoDomanda.setText(questionTextREsId)
+
+    }
 
     private fun checkAnswer(bool:Boolean) {
         if(questionBank[currentIndex].answer==bool){visualizza_il_dato_ricevuto("Bravo!")} else{
