@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".capitolo_5.Capitolo_5">
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <TextView
+            android:layout_marginTop="40dp"
+            android:paddingBottom="55dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/spiegazione_capitolo_5"
+            android:textSize="21sp"
+            android:id="@+id/tx_spiegazione">
+
+        </TextView>
+    </ScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:gravity="center"
+        android:text="https://forums.bignerdranch.com/"
+        >
+
+    </TextView>
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".capitolo_4.Capitolo_4">
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <TextView
+            android:layout_marginTop="40dp"
+            android:paddingBottom="55dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/spiegazione_capitolo_6"
+            android:textSize="21sp"
+            android:id="@+id/tx_spiegazione">
+
+        </TextView>
+    </ScrollView>
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/question_text"
+        android:textSize="21sp"
+        android:id="@+id/tx_titolo_quiz_cap2">
+
+    </TextView>
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_margin="16dp"
+            android:id="@+id/bn_vero_cap2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/true_button" />
+        <Button
+            android:layout_margin="16dp"
+            android:id="@+id/bn_falso_cap2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/false_button" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        <Button
+            android:layout_margin="16dp"
+            android:id="@+id/bn_vettore_sx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/arrow_left"
+
+            android:text="@string/precedente" />
+        <Button
+            android:layout_margin="16dp"
+            android:id="@+id/bn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next_button" />
+        <Button
+            android:layout_margin="16dp"
+            android:id="@+id/bn_vettore_dx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/arrow_right"
+            android:text="@string/next_button" />
+
+    </LinearLayout>
+    <Button
+        android:layout_margin="16dp"
+        android:id="@+id/bn_cheat_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_gravity="center"
+        android:text="@string/cheat_button" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:gravity="center"
+        android:text="https://developer.android.com/jetpack"
+        >
+
+    </TextView>
+</LinearLayout>

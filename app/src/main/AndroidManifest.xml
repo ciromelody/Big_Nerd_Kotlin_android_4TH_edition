@@ -9,12 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".capitolo_6.Capitolo_6"></activity>
+        <activity android:name=".capitolo_6.CheatActivity" />
+        <activity android:name=".capitolo_5.Capitolo_5" />
+        <activity android:name=".capitolo_4.Capitolo_4" />
         <activity
-            android:label="Capitolo 2"
-            android:name=".Android_and_ModelView_Controller_capitolo_2"></activity>
+            android:name=".Android_and_ModelView_Controller_capitolo_2"
+            android:label="Capitolo 2" />
         <activity
-            android:label="Capitolo 1"
-            android:name=".Two_button_GeoQuiz" />
+            android:name=".Two_button_GeoQuiz"
+            android:label="Capitolo 1" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

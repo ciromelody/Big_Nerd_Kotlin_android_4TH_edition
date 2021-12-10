@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="0,1,2,3"
+   android:padding="13dp"
+    android:layout_margin="15dp"
+>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+
+        >
+
+        <TextView
+            android:id="@+id/textView1_1"
+            android:text="@string/api_level"
+            android:layout_weight="1"
+            android:layout_column="0"
+            android:background="@drawable/shape"
+             />
+
+        <TextView
+            android:id="@+id/textView1_2"
+            android:text="@string/nome_in_codice"
+            android:layout_weight="1"
+            android:layout_column="1"
+             />
+        <TextView
+            android:id="@+id/textView1_3"
+            android:text="Vers.firm.device"
+            android:layout_weight="1"
+            android:layout_column="2"
+             />
+        <TextView
+            android:id="@+id/textView1"
+            android:text="% uso device"
+            android:layout_weight="1"
+            android:layout_column="3"
+            />
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:padding="5dip" >
+        <LinearLayout
+            android:layout_column="0"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+        <View
+            android:layout_height="match_parent"
+            android:layout_width="1dp"
+            android:background="#000000"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/shape"
+
+            android:id="@+id/textView2_1"
+            android:text="@string/_28"/>
+            <View
+                android:layout_height="match_parent"
+                android:layout_width="1dp"
+                android:background="#000000"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textView2_2"
+            android:text="@string/pie"
+
+            android:layout_column="1"
+            android:gravity="center"
+            android:background="@drawable/shape"
+            />
+        <TextView
+            android:id="@+id/textView2_3"
+            android:text="@string/_9_0"
+
+            android:layout_column="2"
+            android:gravity="center"
+            android:background="@drawable/shape"
+            />
+        <TextView
+            android:id="@+id/textView2_4"
+            android:text="@string/_10_4"
+
+            android:layout_column="3"
+            android:gravity="center"
+            android:background="@drawable/shape"
+            />
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:padding="5dip" >
+        <LinearLayout
+            android:layout_column="0"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+            <View
+                android:layout_height="match_parent"
+                android:layout_width="1dp"
+                android:background="#000000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/shape"
+
+                android:id="@+id/textView3_1"
+                android:text="@string/_27"/>
+            <View
+                android:layout_height="match_parent"
+                android:layout_width="1dp"
+                android:background="#000000"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3_2"
+            android:text="@string/oreo"
+            android:layout_column="1"
+            android:gravity="center"
+
+
+            />
+
+
+        <TextView
+            android:id="@+id/textView3_3"
+            android:text="@string/_8_1"
+
+            android:layout_column="2"
+            android:gravity="center"
+            android:background="@drawable/shape"
+            />
+        <TextView
+            android:id="@+id/textView3_4"
+            android:text="@string/_15_4"
+
+            android:layout_column="3"
+            android:gravity="center"
+            android:background="@drawable/shape"
+            />
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:collapseColumns="1"
+
+        android:padding="5dip" >
+        <LinearLayout
+            android:layout_column="0"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+            <View
+                android:layout_height="match_parent"
+                android:layout_width="1dp"
+                android:background="#000000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/shape"
+
+                android:id="@+id/textView4_1"
+                android:text="@string/_26"/>
+            <View
+                android:layout_height="match_parent"
+                android:layout_width="1dp"
+                android:background="#000000"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textView4_2"
+            android:text="@string/oreo"
+
+            android:layout_column="1"
+            android:gravity="center"
+            android:background="@drawable/shape"
+            />
+        <TextView
+            android:id="@+id/textView4_3"
+            android:text="@string/_8_0"
+
+            android:layout_column="2"
+            android:gravity="center"
+            android:background="@drawable/shape"
+            />
+        <TextView
+            android:id="@+id/textView4_4"
+            android:text="@string/_12_9"
+
+            android:layout_column="3"
+            android:gravity="center"
+            android:background="@drawable/shape"
+            />
+
+    </TableRow>
+</android.widget.TableLayout>

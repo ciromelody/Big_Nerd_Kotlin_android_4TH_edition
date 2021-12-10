@@ -45,12 +45,30 @@
 
         />
     <Button
-        android:id="@+id/button_capitolo_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/capitolo_3"
-        android:layout_marginBottom="16dp"
+    android:id="@+id/button_capitolo_3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/capitolo_3"
+    android:layout_marginBottom="16dp"
 
         />
+    <Button
+        android:id="@+id/button_capitolo_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Persistenza di novità"
+        android:layout_marginBottom="16dp"/>
+    <Button
+        android:id="@+id/button_capitolo_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/capitolo_5_debbugging"
+        android:layout_marginBottom="16dp"/>
+    <Button
+        android:id="@+id/button_capitolo_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/capitolo_6_debbugging"
+        android:layout_marginBottom="16dp"/>
 </LinearLayout>
 </ScrollView>

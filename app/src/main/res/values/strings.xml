@@ -25,4 +25,55 @@
     <string name="domand_asia">NEXT</string>
     <string name="precedente">precedente</string>
     <string name="capitolo_3">Capitolo 3 Ciclo di vita</string>
+    <string name="spiegazione_capitolo_4">In questo capitolo si introduce la capacità di conservare la persistenza del della classe QuizViewModel e i suoi dati all\'interno anche se si fa ruotare il telefono\n
+    Ovviamente la classe non può avere riferimenti al Layout esterno visto che esso sarà distrutto durante la rotazione.\n
+    Prova ora a ruotare lo schermo vedrai che la domanda del quiz sarà sempre la stessa.\n
+    In questo capitolo si parla anche di onSaveInstanceState questo è nullo quando l\'activity è eseguita
+    la prima volta.\n
+    Ma esso è importante quando il sistema killa l\'app,per conservare i dati necessari.\n
+    ViewModel fa parte della libreria JetPack in basso vi è il link.androidx. è sinonimo di jetpPack.\n
+     In passato impedivo la rotazione nel file manifest.xml,ma questa non è una buona pratica,in quanto vi sono altri
+     casi di distruzione layout come una riduzione della finestra dello schermo etc. etc.
+    </string>
+    <string name="capitolo_5_debbugging">Capitolo 5 -Debbugging</string>
+    <string name="spiegazione_capitolo_5">In questo capitolo 5 si parlerà di deubbugging di un app.\n
+    Useremo Logcat,uno strumento ,secondo me, fondamentale per lo sviluppo.Useremo Android Lint.
+    Logcat è molto semplice da usare.In basso compare il nome Logcat si clicca e compare la finestra
+    In caso di errore,viene riportato il numero di riga.\n
+     In alcuni casi è molto difficile trovare l\'errore.Questo succede quando l\'activity dove si è verificato
+    l\'errore ritorna all\'activity chiamante.In questi casi basta mettere un finish all\'activity.
+    Android Lint invece l\'ho scoperto adesso e devo dire che è utilissimo in fase di stesura iniziale del codice
+    in quanto permette di scrivere codice secondo i canoni dettati da android studio.
+    Basta cliccare il menu Analyze e poi  Inspect code.
+    Sinceramente come eseguire il debug passo passo ,non l\'ho capito leggendo il libro ma vedendo un piccolo video.
+    Il primo passo è segnare con un pallino rosso il punto di interruzione,il secondo passo è attaccare il debug,
+    il terzo passo è eseguire l\'app dal telefono o dall\'emulatore.
+    Gli errori difficili da risolvere sono quelli legati ai layout,per tante ragioni.In questi casi
+    la prima cosa da fare è clear project dal menu run e rebuild,la seconda cosa da fare è sincronizzare il
+    file Gradle.La terza cosa da fare è seguire i suggerimenti di Android Lint.
+    La quarta cosa da fare èselezionare Tools dal menu e poi Layout Inspector.La quinta cosa da fare è analizzare le performance
+    Cliccando su Views->Tool windows ->profiler
+        Dopodichè incrocio le dita e mi affido a stackoverflow.
+
+    </string>
+    <string name="capitolo_6_debbugging">Capitolo 6 passaggio a seconda activity</string>
+    <string name="warning_text">Are you sure you want to do this?</string>
+    <string name="show_answer_button">Show Answer</string>
+    <string name="cheat_button">Cheat!</string>
+    <string name="judgment_toast">Cheating is wrong.</string>
+    <string name="spiegazione_capitolo_6">In questo Capitolo 6 si tratterà di come richiamare una seconda activity che ci svelerà la risposta esatta del quiz</string>
+    <string name="haibarato_toast">Hai barato eh eh</string>
+    <string name="api_level">Api level</string>
+    <string name="nome_in_codice">Nome in codice</string>
+    <string name="_10_4">10.4</string>
+    <string name="_9_0">9.0</string>
+    <string name="pie">Pie</string>
+    <string name="_28">28</string>
+    <string name="_27">27</string>
+    <string name="oreo">oreo</string>
+    <string name="_8_1">8.1</string>
+    <string name="_15_4">15.4</string>
+    <string name="_26">26</string>
+    <string name="_8_0">8.0</string>
+    <string name="_12_9">12.9</string>
 </resources>
